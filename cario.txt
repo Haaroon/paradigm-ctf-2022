@@ -1,0 +1,19 @@
+Compile: (make sure all commands are executed in the virtual environment)
+
+cairo-compile test.cairo --output test_compiled.json
+
+Run:
+
+cairo-run \
+  --program=test_compiled.json --print_output \
+  --print_info --relocate_prints
+
+Custom starket networks
+
+export STARKNET_NETWORK=alpha-goerli
+export STARKNET_WALLET=starkware.starknet.wallets.open_zeppelin.OpenZeppelinAccount
+
+starknet deploy_account
+
+# The deployment address of the previous contract.
+export CONTRACT_ADDRESS="0x03a7002ae2d9867b6661db0c1217a2ebbe40a8a2b0667758331f65c18813dfca"

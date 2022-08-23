@@ -1,0 +1,27 @@
+riddle_abi = '''
+[
+    {
+        "inputs": [
+            {
+                "name": "solution",
+                "type": "felt"
+            }
+        ],
+        "name": "solve",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "solution",
+        "outputs": [
+            {
+                "name": "solution",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
+'''
